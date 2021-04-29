@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Driver Profile</title>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- font-awsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="w3-sidebar cross-button w3-bar-block w3-collapse w3-card w3-animate-left " style="width:220px;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+    <ul class="navbar-nav text-center d-block">
+      <li class="nav-item">
+
+        <a href="index.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-home pr-2"></i></span>DashBoard</a>
+
+      </li>
+      <li class="nav-item ">
+
+        <a href="workorder.html" class="nav-link w3-bar-item w3-button"><span><i class="far fa-copy pr-2"></i></span>Work Orders</a>
+
+      </li>
+      <li class="nav-item">
+        <a href="customer.html" class="nav-link w3-bar-item w3-button "><span><i class="fas fa-male pr-2"></i></span>Customers</a>
+      </li>
+      <li class="nav-item active">
+        <a href="user.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-user pr-2"></i></span>Users</a>
+      </li>
+      <li class="nav-item ">
+        <a href="vehicle.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-truck-moving pr-2"></i></span>Vehicles</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link w3-bar-item w3-button disabled"><span><i class="fas fa-box-open"></i></span>Containers</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link w3-bar-item w3-button disabled"><span><i class="fas fa-location-arrow"></i></span>Location</a>
+      </li>
+      <li class="nav-item">
+        <a href="user-charge.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-table"></i></span>Custom Tables</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link w3-bar-item w3-button disabled"><span><i class="far fa-flag"></i></span>Reports</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="w3-main" style="margin-left:220px" id="lowColor">
+    <div class="w3-teal button-class bg-dark">
+      <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+</div>
+<div class="side-area">
+ <div class="scrollmenu workorder-menu d-flex">
+  <a href="user.html">User Profile</a>
+  <a href="user-security.html">User Security</a> 
+  <div class="active">
+    <a href="driver-profile.html">Driver Profile</a>
+  </div>
+</div>
+
+
+
+</div>
+<div class="container abc-contact">
+  <h1>Kenneth L. Abernathy</h1>
+</div>
+<div class="form-area">
+  <div class="container">
+
+    <div class="inner-form">
+
+      <div class="row d-block">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+         <div class="form-group">
+          <label for="License">Driver's License#</label>
+          <input type="text" name="License" id="License" class="form-control" placeholder="">
+
+        </div>
+        
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+       <div class="form-group">
+         <label for="customer">License Class</label>
+         <div class="activity-select">
+          <select id="myselect">
+            <option id="option-style"></option>
+            <option id="option-style">Full</option>
+            <option id="option-style">Empty</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+     <div class="form-group">
+      <label for="date">Expiration Date</label>
+      <input type="date" name="date" id="date" class="form-control" placeholder="">
+    </div>
+
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <div class="form-group d-flex chbox">
+      <label class="box d-flex"><span>Expiration Warning</span>
+        <input type="checkbox" class="form-control">
+        <span class="checkmark"></span>
+      </label>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="row d-flex">
+  <div class="col-sm-4 col-md-1 col-lg-1">
+   <div class="form-group">
+    <input type="text" name="Starting" class="form-control" placeholder="">
+
+  </div>
+
+</div>
+<div class="col-sm-4 col-md-3 col-lg-3">
+   <div class="form-group">
+         <div class="activity-select">
+          <select id="myselect">
+            <option id="option-style"></option>
+            <option id="option-style">Days</option>
+            <option id="option-style">Weeks</option>
+            <option id="option-style">Months</option>
+          </select>
+        </div>
+      </div>
+</div>
+
+</div>
+<div class="row d-block">
+   <div class="col-sm-12 col-md-4 col-lg-4">
+   <div class="form-group">
+         <label for="customer">Schedule Limits</label>
+         <div class="activity-select">
+          <select id="myselect">
+            <option id="option-style"></option>
+            <option id="option-style">Full</option>
+            <option id="option-style">Empty</option>
+          </select>
+        </div>
+      </div>
+  </div>
+  
+</div>
+<div class="row checkbox-area">
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <fieldset class="d-flex">
+      <legend>Truck/Trailer Permissions</legend>
+      <div class="d-block">
+      <div class="form-group  chbox ml-2">
+
+        <label class="box d-flex"><span>Permission 1</span>
+          <input type="checkbox" class="form-control">
+          <span class="checkmark"></span>
+        </label>
+
+      </div>
+      <div class="form-group  chbox ml-2">
+
+        <label class="box d-flex"><span>Permission 2</span>
+          <input type="checkbox" class="form-control">
+          <span class="checkmark"></span>
+        </label>
+
+      </div>
+    </div>
+    <div class="d-block">
+      <div class="form-group  chbox ml-2">
+
+        <label class="box d-flex"><span>Permission 3</span>
+          <input type="checkbox" class="form-control">
+          <span class="checkmark"></span>
+        </label>
+
+      </div>
+      <div class="form-group  chbox ml-2">
+
+
+        <label class="box d-flex"><span>Permission 4</span>
+          <input type="checkbox" class="form-control">
+          <span class="checkmark"></span>
+        </label>
+
+      </div>
+    </div>
+    </fieldset>
+
+  </div>
+  <div class="col-sm-12 col-md-2 col-lg-2 d-block">
+  <div class="form-group">
+          <label for="Hourly">Hourly Rate</label>
+          <input type="text" name="Hourly" id="Hourly" class="form-control" placeholder="">
+
+        </div>
+  <div class="form-group">
+          <label for="MileageRate">Mileage Rate</label>
+          <input type="text" name="MileageRate" id="MileageRate" class="form-control" placeholder="">
+
+        </div>
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="buttom-button-area">
+  <div class="container d-flex">
+    <div class="flex-container botton-start d-flex mr-auto">
+      <div class="d-flex">
+        <input type="button" name="save" value="SAVE" class="btn">
+      </div>
+      <div class="d-flex">
+        <input type="button" name="exit" value="EXIT" class="btn">
+      </div>
+      <div class="d-flex">
+        <input type="button" name="recall" value="RECALL" class="btn">
+      </div>
+      <div class="d-flex">
+        <input type="button" name="search" value="SEARCH" class="btn">
+      </div>
+      <div class="d-flex">
+        <input type="button" name="delete" value="DELETE" class="btn">
+      </div>
+      
+    </div>
+
+    <div class="ml-auto d-flex">
+      <div class="history d-block text-center">
+        <span><i class="fas fa-history"></i></span>
+        <p>History</p> 
+      </div>
+
+      <div class="history d-block ml-4 text-center">
+        <span><i class="fas fa-cogs"></i></span>
+        <p>Settings</p>
+      </div>
+    </div>
+    
+  </div>
+  
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("lowColor").style.opacity=".2";
+    document.getElementById("mySidebar").style.opacity="1";
+
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("lowColor").style.opacity="1";
+  }
+</script>
+
+
+
+</body>
+
+
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

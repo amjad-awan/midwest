@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- font-awsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="w3-sidebar cross-button w3-bar-block w3-collapse w3-card w3-animate-left" style="width:220px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <ul class="navbar-nav text-center d-block">
+  <li class="nav-item active">
+      
+  <a href="index.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-home pr-2"></i></span>DashBoard</a>
+
+</li>
+  <li class="nav-item">
+      
+  <a href="workorder.html" class="nav-link w3-bar-item w3-button"><span><i class="far fa-copy pr-2"></i></span>Work Orders</a>
+
+</li>
+<li class="nav-item">
+  <a href="customer.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-user-tie pr-2"></i></span>Customers</a>
+</li>
+<li class="nav-item">
+  <a href="user.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-user pr-2"></i></span>Users</a>
+</li>
+<li class="nav-item">
+  <a href="vehicle.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-truck-moving pr-2"></i></span>Vehicles</a>
+</li>
+<li class="nav-item">
+  <a href="#" class="nav-link w3-bar-item w3-button disabled"><span><i class="fas fa-box-open"></i></span>Containers</a>
+</li>
+<li class="nav-item">
+  <a href="#" class="nav-link w3-bar-item w3-button disabled"><span><i class="fas fa-location-arrow"></i></span>Location</a>
+</li>
+<li class="nav-item">
+  <a href="user-charge.html" class="nav-link w3-bar-item w3-button"><span><i class="fas fa-table"></i></span>Custom Tables</a>
+</li>
+<li class="nav-item">
+  <a href="#" class="nav-link w3-bar-item w3-button disabled"><span><i class="far fa-flag"></i></span>Reports</a>
+</li>
+</ul>
+</div>
+
+<div class="w3-main" style="margin-left:220px" id="lowColor">
+<div class="w3-teal button-class bg-dark">
+  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+</div>
+
+<div class="w3-container">
+  <div class="row row-area1">
+    <div class="col-area col-area-1 col-sm-12 col-md-4 col-lg-4">
+      <h2 class="text-center">50</h2>
+      <p class="text-center">Recent Work Orders</p>
+      <div class="side-area-link d-flex  justify-content-center ">
+            <a href="#">VIEW MORE</a> 
+          </div> 
+    </div>
+    <div class="col-area col-sm-12 col-md-4 col-lg-4">
+      <h2 class="text-center">17</h2>
+      <p class="text-center">Active Users</p>
+      <div class="side-area-link d-flex  justify-content-center ">
+            <a href="#" >VIEW MORE</a> 
+          </div> 
+    </div>
+    <div class="col-area col-last col-sm-12 col-md-4 col-lg-4">
+      <h2 class="text-center">47</h2>
+      <p class="text-center">Active Customers</p>
+      <div class="side-area-link d-flex  justify-content-center ">
+            <a href="# " >VIEW MORE</a> 
+          </div> 
+    </div>
+    
+  </div>
+
+
+</div>
+
+<div class="menu-area">
+  <div class="row d-flex">
+    <div class="col-area col-md-2 col-lg-2 text-center">
+      <a href="#">LINE#&nbsp;</a>
+    </div>
+    <div class="col-area col-md-2 col-lg-2 text-center ">
+      <a href="#">WORK ORDER</a>
+    </div>
+    <div class="col-area col-md-2 col-lg-2 text-center ">
+      <a href="#">PURCHASE ORDER</a>
+    </div>
+    <div class="col-area col-md-2 col-lg-2 text-center ">
+      <a href="#">DRIVER</a>
+    </div>
+    <div class="col-area col-md-2 col-lg-2 text-center ">
+      <a href="#">CUSTOMER</a>
+    </div>
+    <div class="col-area col-md-2 col-lg-2 text-center ">
+      <a href="#">STATUS</a>
+    </div>
+    </div>
+    
+  </div>
+
+
+<div class="data-table " style="">
+  <div class="row-area d-flex">
+    <div class="col-area2 col-lg-2 col-md-2 d-block">
+      <ul class="d-block">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+      </ul>
+      
+    </div>
+    <div class="col-area2 col-lg-2 col-md-2 d-block">
+      <ul>
+        <li>W003133</li>
+        <li>W003133</li>
+        <li>W003131&nbsp;</li>
+        <li>W003129&nbsp;</li>
+        <li>W003128</li>
+      </ul>
+      
+    </div>
+    <div class="col-area2 col-lg-2 col-md-2 d-block">
+      <ul>
+        <li>P003133</li>
+        <li>P003130</li>
+        <li>P003131</li>
+        <li>P003129</li>
+        <li>P003128</li>
+      </ul>
+      
+    </div>
+    <div class="col-area2 col-lg-2 col-md-2 d-block">
+      <ul>
+        <li>JOHN DOE</li>
+        <li>TINA BYRD</li>
+        <li>JAMES SPENCER</li>
+        <li>ABE MOSES</li>
+        <li>JAMES SPENCER</li>
+      </ul>
+      
+    </div>
+    <div class="col-area2 col-lg-2 col-md-2 d-block">
+      <ul>
+        <li>ABC Company</li>
+        <li>Containers INC</li>
+        <li>Best Practices LLC</li>
+        <li>Fancy Pants INC</li>
+        <li>Cahill Brothers&nbsp;</li>
+      </ul>
+      
+    </div>
+    <div class="col-area2 col-last col-lg-2 col-md-2 d-block">
+      <ul>
+        <li>In Progress</li>
+        <li>In Progress</li>
+        <li>In Progress</li>
+        <li>Complete</li>
+        <li>Complete</li>
+      </ul> 
+    </div> 
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+<div class="home-select">
+  <select id="myselect"  style="margin-top:15px">
+    <option id="option-style">Select</option>
+     <option id="option-style">ID</option>
+      <option id="option-style">PURCHASE ORDER</option>
+       <option id="option-style">DRIVER</option>
+        <option id="option-style">CUSTOMER</option>
+        <option id="option-style">STATUS</option>
+  </select>
+</div>
+</div> 
+
+
+<div class="mobile-view">
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-area col-sm-12">
+        <ul>
+          <li>
+            ID 
+          </li>
+          <li>
+            Work Order
+          </li>
+          <li>
+            Purchase Order
+          </li>
+          <li>
+            Driver
+          </li>
+          <li>
+            Customer
+          </li>
+          <li>
+            Status
+          </li>
+        </ul>
+        <ul class="ml-auto">
+          <li>
+            01
+          </li>
+          <li>
+            Order 01
+          </li>
+          <li>
+            3545
+          </li>
+          <li>
+            Driver 01
+          </li>
+          <li>
+            kmthewriter
+          </li>
+          <li>
+            Complete
+          </li>
+        </ul>
+        
+      </div>
+       <div class="col-area col-sm-12">
+        <ul>
+          <li>
+            ID 
+          </li>
+          <li>
+            Work Order
+          </li>
+          <li>
+            Purchase Order
+          </li>
+          <li>
+            Driver
+          </li>
+          <li>
+            Customer
+          </li>
+          <li>
+            Status
+          </li>
+        </ul>
+        <ul class="ml-auto">
+          <li>
+            02
+          </li>
+          <li>
+            ORDER 02
+          </li>
+          <li>
+            68658
+          </li>
+          <li>
+            DRIVER 02
+          </li>
+          <li>
+            kmthewriter
+          </li>
+          <li>
+            Complete
+          </li>
+        </ul>
+        
+      </div>
+       <div class="col-area col-sm-12">
+        <ul>
+          <li>
+            ID 
+          </li>
+          <li>
+            Work Order
+          </li>
+          <li>
+            Purchase Order
+          </li>
+          <li>
+            Driver
+          </li>
+          <li>
+            Customer
+          </li>
+          <li>
+            Status
+          </li>
+        </ul>
+        <ul class="ml-auto">
+          <li>
+           03
+          </li>
+          <li>
+            ORDER 03
+          </li>
+          <li>
+            443215
+          </li>
+          <li>
+            DRIVER 03
+          </li>
+          <li>
+            kmthewriter
+          </li>
+          <li>
+            Complete
+          </li>
+        </ul>
+        
+      </div>
+       <div class="col-area col-sm-12">
+        <ul>
+          <li>
+            ID 
+          </li>
+          <li>
+            Work Order
+          </li>
+          <li>
+            Purchase Order
+          </li>
+          <li>
+            Driver
+          </li>
+          <li>
+            Customer
+          </li>
+          <li>
+            Status
+          </li>
+        </ul>
+        <ul class="ml-auto">
+          <li>
+           04
+          </li>
+          <li>
+            ORDER 04
+          </li>
+          <li>
+            53523
+          </li>
+          <li>
+            DRIVER 04
+          </li>
+          <li>
+            kmthewriter
+          </li>
+          <li>
+            Complete
+          </li>
+        </ul>
+        
+      </div>
+       <div class="col-area col-sm-12">
+        <ul>
+          <li>
+            ID 
+          </li>
+          <li>
+            Work Order
+          </li>
+          <li>
+            Purchase Order
+          </li>
+          <li>
+            Driver
+          </li>
+          <li>
+            Customer
+          </li>
+          <li>
+            Status
+          </li>
+        </ul>
+        <ul class="ml-auto">
+          <li>
+           05
+          </li>
+          <li>
+            ORDER 05
+          </li>
+          <li>
+            3128
+          </li>
+          <li>
+            DRIVER 05
+          </li>
+          <li>
+            kmthewriter
+          </li>
+          <li>
+            Complete
+          </li>
+        </ul>
+        
+      </div>
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="container">
+<div class="home-select">
+  <select id="myselect" style="margin-bottom: 15px">
+    <option id="option-style">Select</option>
+     <option id="option-style">15</option>
+      <option id="option-style">10</option>
+       <option id="option-style">5</option>
+        <option id="option-style">All</option>
+  </select>
+  
+</div>
+</div> 
+
+</div>
+
+
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("lowColor").style.opacity=".2";
+    document.getElementById("mySidebar").style.opacity="1";
+
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("lowColor").style.opacity="1";
+  }
+</script>
+
+
+     
+</body>
+
+
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
